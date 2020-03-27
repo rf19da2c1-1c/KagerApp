@@ -48,7 +48,7 @@ namespace KagerApp.viewmodel
             _clearCreateOne = new RelayCommand(ClearCreate);
 
             // helping
-            _persitence = PersitenceFactory.GetPersistency(PersistenceType.File);
+            _persitence = PersitenceFactory.GetPersistency(PersistenceType.Database);
             LoadMethod(); // initilize kager
         }
 

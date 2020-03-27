@@ -25,6 +25,7 @@ namespace KagerApp.model.persistence
                 case PersistenceType.File: return new FilePersistence();
 
                 // Database
+                case PersistenceType.Database: return new DBPersistence();
 
                 default:return new SimplePersistence();
             }
